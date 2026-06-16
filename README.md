@@ -268,6 +268,4 @@ This project is created for learning, portfolio, and educational purposes.
 
 ---
 
-## License
 
-This project is created for learning, portfolio, and educational purposes.
