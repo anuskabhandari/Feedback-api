@@ -1,71 +1,273 @@
-#  Django Feedback API (Live Project)
+# AI Feedback Analysis System
 
-A simple and deployed Django REST Framework API that allows users to create, view, and search feedback.  
-This project is hosted on Render and is accessible online.
+A full-stack Feedback Analysis Platform built with Django REST Framework and React. Users can submit feedback, perform live searches, filter results, and receive AI-powered sentiment and emotion analysis using Groq AI.
 
- Live URL: https://feedback-api-dsex.onrender.com
+## Live Demo
 
----
+**Frontend:** https://feedback-api-topaz.vercel.app
 
-##  Features
-
--  Add Feedback (POST API)
--  Get All Feedback (GET API)
--  Search Feedback by keyword
--  Simple validation system
--  Fully deployed backend API
+**Backend API:** https://feedback-api-dsex.onrender.com
 
 ---
 
-##  Tech Stack
+## Features
 
-- Python 
-- Django 
-- Django REST Framework 
-- Gunicorn (Production server)
-- Render (Deployment platform)
+### Feedback Management
+
+* Add new feedback
+* View all feedback
+* Delete feedback
+* Search feedback by keyword
+* Real-time search functionality
+* Sentiment-based filtering
+
+### AI Analysis
+
+* Automatic Sentiment Analysis
+
+  * Positive
+  * Negative
+  * Neutral
+* Emotion Detection
+
+  * Happy
+  * Sad
+  * Angry
+  * Excited
+  * Frustrated
+  * Neutral
+
+### Frontend Features
+
+* Responsive React UI
+* Live search without page refresh
+* Dynamic feedback updates
+* Clean and user-friendly interface
+
+### Backend Features
+
+* Django REST Framework APIs
+* SQLite database
+* RESTful architecture
+* Environment variable configuration
+* API validation
+
+### DevOps & Deployment
+
+* GitHub Actions CI/CD
+* Automated testing workflow
+* Render deployment
+* Vercel deployment
+* Environment variable management
 
 ---
 
-##  Live API Endpoints
+## Tech Stack
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /api/feedback/ | Get all feedback |
-| POST | /api/feedback/add/ | Create new feedback |
-| GET | /api/feedback/search/?q=keyword | Search feedback |
+### Backend
+
+* Python
+* Django
+* Django REST Framework
+* Gunicorn
+* WhiteNoise
+
+### Frontend
+
+* React.js
+* Axios
+* JavaScript
+* HTML
+* CSS
+
+### AI
+
+* Groq API
+* LLM-powered sentiment and emotion analysis
+
+### Deployment
+
+* Render (Backend)
+* Vercel (Frontend)
+* GitHub Actions (CI/CD)
 
 ---
 
-##  Live API Base URL
+## Project Structure
 
-
-https://feedback-api-dsex.onrender.com
-
+```text
+feedback-project/
+│
+├── feedback/
+│   ├── ai_service.py
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── tests.py
+│
+├── feedback_project/
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── feedback-ui/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── .github/workflows/
+│   └── tests.yml
+│
+├── requirements.txt
+├── manage.py
+└── README.md
+```
 
 ---
 
-##  Sample POST Request
+## API Endpoints
 
-json
+### Get All Feedback
+
+```http
+GET /api/feedback/
+```
+
+### Add Feedback
+
+```http
+POST /api/feedback/add/
+```
+
+Sample Request:
+
+```json
 {
-    "name": "Anuska",
-    "message": "This is a great project"
+  "title": "Food Review",
+  "name": "Anuska",
+  "message": "The food was amazing and tasty.",
+  "rating": 5
 }
-## Search Example
-https://feedback-api-dsex.onrender.com/api/feedback/search/?q=great
- Installation (For Local Setup)
-# Clone repository
+```
+
+### Search Feedback
+
+```http
+GET /api/feedback/search/?q=happy
+```
+
+### Delete Feedback
+
+```http
+DELETE /api/feedback/delete/<id>/
+```
+
+---
+
+## Local Setup
+
+### Clone Repository
+
+```bash
 git clone https://github.com/anuskabhandari/Feedback-api.git
+cd feedback-project
+```
 
-# Go to project folder
-cd feedback_project
+### Create Virtual Environment
 
-# Install dependencies
+```bash
+python -m venv venv
+```
+
+### Activate Environment
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Mac/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-# Run migrations
+### Create .env File
+
+```env
+SECRET_KEY=your_secret_key
+DEBUG=True
+GROQ_API_KEY=your_groq_api_key
+```
+
+### Run Migrations
+
+```bash
 python manage.py migrate
+```
 
-# Start server
+### Start Backend
+
+```bash
 python manage.py runserver
+```
+
+### Start Frontend
+
+```bash
+cd feedback-ui
+npm install
+npm start
+```
+
+---
+
+## CI/CD
+
+GitHub Actions automatically:
+
+* Installs dependencies
+* Runs Django tests
+* Validates project configuration
+* Helps maintain code quality
+
+Workflow Location:
+
+```text
+.github/workflows/tests.yml
+```
+
+---
+
+## Future Improvements
+
+* User Authentication
+* Dashboard Analytics
+* Feedback Export (CSV/PDF)
+* Charts and Visualizations
+* Admin Panel Enhancements
+* Docker Support
+* PostgreSQL Integration
+
+---
+
+## Author
+
+**Anuska Bhandari**
+
+## License
+
+This project is created for learning, portfolio, and educational purposes.
+
+---
+
+## License
+
+This project is created for learning, portfolio, and educational purposes.
