@@ -1,0 +1,51 @@
+          id,feedback_description,feedback_title,emotion
+1,I completed my project successfully and feel very happy.,Project Success,joy
+2,My friends surprised me with a celebration today.,Friend Celebration,joy
+3,I enjoyed spending time with my family this weekend.,Family Time,joy
+4,I received positive feedback from my teacher.,Teacher Appreciation,joy
+5,I achieved my study goals for this month.,Study Achievement,joy
+6,The event was enjoyable and well organized.,Great Event,joy
+7,I am excited about my upcoming vacation.,Vacation Excitement,joy
+8,I learned a new skill and feel proud.,New Skill Learned,joy
+9,My team won the competition and I am delighted.,Competition Victory,joy
+10,I had a productive day and feel satisfied.,Productive Day,joy
+11,I feel lonely because my friends are away.,Feeling Lonely,sadness
+12,I am disappointed with my recent exam result.,Exam Disappointment,sadness
+13,My favorite event was canceled unexpectedly.,Event Canceled,sadness
+14,I lost an important document today.,Lost Document,sadness
+15,I am feeling down and unmotivated lately.,Low Motivation,sadness
+16,I miss spending time with my loved ones.,Missing Family,sadness
+17,The project did not turn out as expected.,Project Failure,sadness
+18,I am upset because my plans changed suddenly.,Changed Plans,sadness
+19,I could not achieve my target this week.,Missed Target,sadness
+20,I am having a difficult day emotionally.,Emotional Day,sadness
+21,The internet connection keeps failing and it is frustrating.,Internet Problem,anger
+22,I am annoyed by the constant delays in service.,Service Delay,anger
+23,Someone interrupted me repeatedly during the meeting.,Meeting Interruption,anger
+24,The application crashed while I was working.,Application Crash,anger
+25,I am frustrated by the lack of communication.,Poor Communication,anger
+26,The long waiting time made me irritated.,Long Wait,anger
+27,I am angry because my work was unfairly criticized.,Unfair Criticism,anger
+28,The repeated errors are wasting my time.,Frequent Errors,anger
+29,I am upset with the poor customer support.,Poor Support,anger
+30,The noise in the environment is very annoying.,Noisy Environment,anger
+31,I am nervous about tomorrow's presentation.,Presentation Anxiety,fear
+32,I am worried about the upcoming interview.,Interview Concern,fear
+33,I feel anxious about meeting new people.,Social Anxiety,fear
+34,I am afraid of making mistakes during the exam.,Exam Fear,fear
+35,I worry about completing all tasks on time.,Deadline Concern,fear
+36,I feel uncertain about my future career.,Career Uncertainty,fear
+37,I am scared that the project might fail.,Project Risk,fear
+38,I am concerned about the final results.,Result Concern,fear
+39,I feel uneasy about the upcoming changes.,Unexpected Changes,fear
+40,I am worried about handling new responsibilities.,New Responsibilities,fear
+41,I was shocked by the unexpected announcement.,Unexpected News,surprise
+42,I received an unexpected gift today.,Surprise Gift,surprise
+43,I was amazed by the excellent performance.,Amazing Performance,surprise
+44,The sudden success of the project surprised me.,Project Success,surprise
+45,I did not expect such a quick response.,Quick Response,surprise
+46,The results were much better than anticipated.,Better Results,surprise
+47,I was surprised to see my old friend after many years.,Old Friend,surprise
+48,The unexpected opportunity made my day.,New Opportunity,surprise
+49,I was astonished by the beautiful scenery.,Beautiful Scenery,surprise
+50,The announcement came as a complete surprise.,Unexpected Announcement,surprise
